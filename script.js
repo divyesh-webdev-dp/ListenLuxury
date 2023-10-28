@@ -17,3 +17,12 @@ $(document).ready(function() {
         autoHeight : false
     });
 });
+window.addEventListener('scroll', () => {
+    const verticalScrollPx = window.scrollY;
+    if(verticalScrollPx != 0){
+        $("#home").addClass("bg-black");
+    }else{
+        $("#home").removeClass("bg-black");
+    }
+  });
+  
