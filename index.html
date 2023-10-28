@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ListenLuxury</title>
+
+  <link rel="stylesheet" href="plugins/all.min.css">
+  <!-- Tailwind CSS Play CDN-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <header class="navbar fixed z-50 w-full h-20 lg:h-24" id="home">
+    <div class="container">
+      <nav class="lg:flex lg:flex-row lg:p-6 text-white">
+        <div class="flex flex-row justify-end lg:w-1/4">
+          <div class="w-4/5">
+            <a href="#home">
+              <img src="Logo/listenluxury-tarnsperent-icon.png" alt="ListenLuxury"
+                class="w-44 h-32 lg:h-32 -mt-4 -ml-2 lg:-ml-20 lg:-mt-10">
+              <!-- ListenLuxury -->
+            </a>
+          </div>
+          <div class="w-32 text-3xl relative lg:hidden">
+            <span class="absolute top-7 right-4 h-9 w-12 bg-black text-white px-3 cursor-pointer" id="mobile-menu-btn">
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </div>
+        </div>
+        <div class="items hidden h-56 opacity-75 lg:opacity-100 lg:block lg:w-3/4" id="mobile-menu">
+          <ul class="uppercase flex flex-col mb-4 -mt-8 lg:flex-row space-y-3 lg:space-y-0 lg:gap-14 bg-black lg:bg-transparent lg:justify-end lg:mx-20 lg:mt-2">
+            <a href="#aboutus">
+              <li class="pb-2 mt-5 mx-5 lg:my-0 border-b-[1px] border-orange-200	lg:border-b-0">About Us</li>
+            </a>
+            <a href="#features">
+              <li class="pb-2 mx-5 lg:my-0 border-b-[1px] border-orange-200	lg:border-b-0">Features</li>
+            </a>
+            <a href="#colors">
+              <li class="pb-2 mx-5 lg:my-0 border-b-[1px] border-orange-200	lg:border-b-0">Colors</li>
+            </a>
+            <a href="#design">
+              <li class="pb-2 mx-5 lg:my-0 border-b-[1px] border-orange-200	lg:border-b-0">Design</li>
+            </a>
+            <a href="#reviews">
+              <li class="pb-2 mx-5 lg:my-0 border-b-[1px] border-orange-200	lg:border-b-0">Reviews</li>
+            </a>
+            <a href="#product">
+              <li class="pb-2 mx-5 lg:my-0 lg:border-b-0">Product</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Navbar End -->
+  <section id="main-slider" class="top-0 cursor-ew-resize">
+    <div id="owl-main" class="owl-carousel">
+      <div class="bg-cover bg-center h-screen" style="background-image: url('images/slider-agency-slider-01.jpg');">
+      </div>
+      <div class="bg-cover bg-center h-screen" style="background-image: url('images/slider-agency-slider-02.jpg');">
+      </div>
+      <div class="bg-cover bg-center h-screen" style="background-image: url('images/slider-agency-slider-03.jpg');">
+      </div>
+    </div>
+  </section>
+  <script src="plugins/jquery-3.7.0.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+  <script src="plugins/owl-carousel/owl.carousel.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
