@@ -1,0 +1,7 @@
+.owl-pagination{
+    margin-top: -50px;
+    position: relative;
+}
+.owl-page span{
+    background: white !important;
+}
