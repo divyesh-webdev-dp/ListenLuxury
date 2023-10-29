@@ -24,6 +24,11 @@ $(document).ready(function() {
         lazyLoad: true,
         navigation: false,
     });
+    $("#owl-colors").owlCarousel({
+        items: 4,
+        lazyLoad: true,
+        navigation: false
+    });
     $(document).on("click","#mobile-menu-btn",function(){
         if($("#mobile-menu").hasClass("hidden")){
             $("#mobile-menu").removeClass("hidden");
