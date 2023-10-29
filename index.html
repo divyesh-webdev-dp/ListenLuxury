@@ -1,151 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ListenLuxury</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ListenLuxury</title>
+    <link rel="stylesheet" href="plugins/all.min.css" />
+    <!-- Tailwind CSS Play CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="plugins/aos/aos.css" />
+    <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="stylesheet" href="plugins/all.min.css">
-  <!-- Tailwind CSS Play CDN-->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="plugins/aos/aos.css">
-  <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css">
-  <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-  <!-- Navbar Start -->
-  <header class="navbar fixed z-50 w-full h-20 lg:h-24" id="home">
-    <div class="container">
-      <nav class="lg:flex lg:flex-row lg:p-6 text-white">
-        <div class="flex flex-row justify-end lg:w-1/4">
-          <div class="w-4/5">
-            <a href="#home">
-              <img src="Logo/listenluxury-tarnsperent-icon.png" alt="ListenLuxury"
-                class="w-44 h-32 lg:h-32 -mt-6 -ml-2 lg:-ml-20 lg:-mt-10">
-              <!-- ListenLuxury -->
-            </a>
+  <body>
+    <!-- Navbar Start -->
+    <header class="navbar fixed z-50 w-full h-20 lg:h-24" id="home">
+      <div class="container">
+        <nav class="lg:flex lg:flex-row lg:p-6 text-white">
+          <div class="flex flex-row justify-end lg:w-1/4">
+            <div class="w-4/5">
+              <a href="#home">
+                <img
+                  src="Logo/listenluxury-tarnsperent-icon.png"
+                  alt="ListenLuxury"
+                  class="w-44 h-32 lg:h-32 -mt-6 -ml-2 lg:-ml-20 lg:-mt-10"
+                />
+                <!-- ListenLuxury -->
+              </a>
+            </div>
+            <div class="w-32 text-3xl relative lg:hidden">
+              <span
+                class="absolute top-4 right-4 h-9 w-12 bg-black text-white px-3 cursor-pointer"
+                id="mobile-menu-btn"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </span>
+            </div>
           </div>
-          <div class="w-32 text-3xl relative lg:hidden">
-            <span class="absolute top-4 right-4 h-9 w-12 bg-black text-white px-3 cursor-pointer" id="mobile-menu-btn">
-              <i class="fa-solid fa-bars"></i>
-            </span>
+          <div
+            class="items hidden h-56 opacity-75 lg:opacity-100 lg:block lg:w-3/4"
+            id="mobile-menu"
+          >
+            <ul
+              class="uppercase flex flex-col mb-4 -mt-8 lg:flex-row space-y-3 lg:space-y-0 lg:gap-14 bg-black lg:bg-transparent lg:justify-end lg:mx-20 lg:mt-2"
+            >
+              <a href="#aboutus">
+                <li
+                  class="pb-2 mt-5 mx-5 lg:my-0 border-b-[1px] border-orange-200 lg:border-b-0"
+                >
+                  About Us
+                </li>
+              </a>
+              <a href="#features">
+                <li
+                  class="pb-2 mx-5 lg:my-0 border-b-[1px] border-orange-200 lg:border-b-0"
+                >
+                  Features
+                </li>
+              </a>
+              <a href="#colors">
+                <li
+                  class="pb-2 mx-5 lg:my-0 border-b-[1px] border-orange-200 lg:border-b-0"
+                >
+                  Colors
+                </li>
+              </a>
+              <a href="#design">
+                <li
+                  class="pb-2 mx-5 lg:my-0 border-b-[1px] border-orange-200 lg:border-b-0"
+                >
+                  Design
+                </li>
+              </a>
+              <a href="#reviews">
+                <li
+                  class="pb-2 mx-5 lg:my-0 border-b-[1px] border-orange-200 lg:border-b-0"
+                >
+                  Reviews
+                </li>
+              </a>
+              <a href="#product">
+                <li class="pb-2 mx-5 lg:my-0 lg:border-b-0">Product</li>
+              </a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section id="main-slider" class="top-0 mb-5 cursor-ew-resize">
+      <div id="owl-main" class="owl-carousel">
+        <div
+          class="slider1 bg-cover bg-center h-[500px] lg:h-screen"
+          style="background-image: url('images/slider-agency-slider-01.jpg')"
+        >
+          <div class="slider1-text container">
+            <div class="pt-28 lg:pt-72 pl-5 lg:pl-60 text-white">
+              <h1
+                class="text-3xl lg:text-7xl uppercase w-52 lg:w-[26rem] font-bold"
+              >
+                New Level of sound experience.
+              </h1>
+              <p class="font-semibold lg:mt-5 lg:text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+                dicta.
+              </p>
+              <p class="font-semibold lg:text-xl">
+                Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <div class="flex flex-col w-44 lg:w-auto lg:flex-row gap-2 mt-2">
+                <button
+                  class="uppercase my-2 py-2 px-6 rounded-full text-xs font-semibold bg-white text-black"
+                >
+                  Purchase Now <i class="fa-solid fa-angle-right"></i>
+                </button>
+                <button
+                  class="uppercase my-0 lg:my-2 py-2 px-6 rounded-full text-xs font-semibold border-2 border-white"
+                >
+                  Read More <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="items hidden h-56 opacity-75 lg:opacity-100 lg:block lg:w-3/4" id="mobile-menu">
-          <ul
-            class="uppercase flex flex-col mb-4 -mt-8 lg:flex-row space-y-3 lg:space-y-0 lg:gap-14 bg-black lg:bg-transparent lg:justify-end lg:mx-20 lg:mt-2">
-            <a href="#aboutus">
-              <li class="pb-2 mt-5 mx-5 lg:my-0 border-b-[1px] border-orange-200	lg:border-b-0">About Us</li>
-            </a>
-            <a href="#features">
-              <li class="pb-2 mx-5 lg:my-0 border-b-[1px] border-orange-200	lg:border-b-0">Features</li>
-            </a>
-            <a href="#colors">
-              <li class="pb-2 mx-5 lg:my-0 border-b-[1px] border-orange-200	lg:border-b-0">Colors</li>
-            </a>
-            <a href="#design">
-              <li class="pb-2 mx-5 lg:my-0 border-b-[1px] border-orange-200	lg:border-b-0">Design</li>
-            </a>
-            <a href="#reviews">
-              <li class="pb-2 mx-5 lg:my-0 border-b-[1px] border-orange-200	lg:border-b-0">Reviews</li>
-            </a>
-            <a href="#product">
-              <li class="pb-2 mx-5 lg:my-0 lg:border-b-0">Product</li>
-            </a>
-          </ul>
+        <div
+          class="slider2 bg-cover bg-center h-[500px] lg:h-screen"
+          style="background-image: url('images/slider-agency-slider-02.jpg')"
+        >
+          <div class="slider2-text container">
+            <div class="pt-28 lg:pt-72 pl-5 lg:pl-60 text-white">
+              <h1
+                class="text-3xl lg:text-7xl uppercase w-52 lg:w-[26rem] font-bold"
+              >
+                Fresh, beautiful, Innovative.
+              </h1>
+              <p class="font-semibold lg:mt-5 lg:text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+                dicta.
+              </p>
+              <p class="font-semibold lg:text-xl">
+                Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <div class="flex flex-col w-44 lg:w-auto lg:flex-row gap-2 mt-2">
+                <button
+                  class="uppercase my-2 py-2 px-6 rounded-full text-xs font-semibold bg-white text-black"
+                >
+                  Purchase Now <i class="fa-solid fa-angle-right"></i>
+                </button>
+                <button
+                  class="uppercase my-0 lg:my-2 py-2 px-6 rounded-full text-xs font-semibold border-2 border-white"
+                >
+                  Read More <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </nav>
-    </div>
-  </header>
-  <!-- Navbar End -->
-
-  <!-- Hero Section Start -->
-  <section id="main-slider" class="top-0 mb-5 cursor-ew-resize">
-    <div id="owl-main" class="owl-carousel">
-      <div class="slider1 bg-cover bg-center h-[500px] lg:h-screen"
-        style="background-image: url('images/slider-agency-slider-01.jpg');">
-        <div class="slider1-text container">
-          <div class="pt-28 lg:pt-72 pl-5 lg:pl-60 text-white">
-            <h1 class="text-3xl lg:text-7xl uppercase w-52 lg:w-[26rem] font-bold">New Level of sound experience.</h1>
-            <p class="font-semibold lg:mt-5 lg:text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dicta.
-            </p>
-            <p class="font-semibold lg:text-xl">
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-            <div class="flex flex-col w-44 lg:w-auto lg:flex-row gap-2 mt-2">
-              <button class="uppercase my-2 py-2 px-6 rounded-full text-xs font-semibold bg-white text-black">
-                Purchase Now <i class="fa-solid fa-angle-right"></i>
-              </button>
-              <button class="uppercase my-0 lg:my-2 py-2 px-6 rounded-full text-xs font-semibold border-2 border-white">
-                Read More <i class="fa-solid fa-angle-right"></i>
-              </button>
+        <div
+          class="slider3 bg-cover bg-center h-[500px] lg:h-screen"
+          style="background-image: url('images/slider-agency-slider-03.jpg')"
+        >
+          <div class="slider3-text container">
+            <div class="pt-28 lg:pt-72 pl-5 lg:pl-60 text-white">
+              <h1
+                class="text-3xl lg:text-7xl uppercase w-52 lg:w-[38rem] font-bold"
+              >
+                The Product Of The future.
+              </h1>
+              <p class="font-semibold lg:mt-5 lg:text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+                dicta.
+              </p>
+              <p class="font-semibold lg:text-xl">
+                Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <div class="flex flex-col w-44 lg:w-auto lg:flex-row gap-2 mt-2">
+                <button
+                  class="uppercase my-2 py-2 px-6 rounded-full text-xs font-semibold bg-white text-black"
+                >
+                  Purchase Now <i class="fa-solid fa-angle-right"></i>
+                </button>
+                <button
+                  class="uppercase my-0 lg:my-2 py-2 px-6 rounded-full text-xs font-semibold border-2 border-white"
+                >
+                  Read More <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="slider2 bg-cover bg-center  h-[500px] lg:h-screen"
-        style="background-image: url('images/slider-agency-slider-02.jpg');">
-        <div class="slider2-text container">
-          <div class="pt-28 lg:pt-72 pl-5 lg:pl-60 text-white">
-            <h1 class="text-3xl lg:text-7xl uppercase w-52 lg:w-[26rem] font-bold">Fresh, beautiful, Innovative.</h1>
-            <p class="font-semibold lg:mt-5 lg:text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dicta.
-            </p>
-            <p class="font-semibold lg:text-xl">
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-            <div class="flex flex-col w-44 lg:w-auto lg:flex-row gap-2 mt-2">
-              <button class="uppercase my-2 py-2 px-6 rounded-full text-xs font-semibold bg-white text-black">
-                Purchase Now <i class="fa-solid fa-angle-right"></i>
-              </button>
-              <button class="uppercase my-0 lg:my-2 py-2 px-6 rounded-full text-xs font-semibold border-2 border-white">
-                Read More <i class="fa-solid fa-angle-right"></i>
-              </button>
-            </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Product Detail Section Start -->
+    <section id="product-one">
+      <div class="flex flex-col lg:flex-row my-6">
+        <div
+          class="h-2/4 mt-12 lg:mt-40 mb-16 lg:ml-32 text-center lg:text-left w-full lg:w-2/4"
+        >
+          <h1 class="text-black text-2xl lg:text-6xl font-semibold">
+            The best product on the market, just for you.
+          </h1>
+          <h4 class="text-lg lg:text-xl my-2 lg:my-6 text-gray-600">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Recusandae, officia sequi. Qui nostrum ullam eius.
+          </h4>
+          <p class="my-2 mb-6 text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+            porro repellat explicabo optio accusantium quos modi nostrum ipsam
+            sit debitis! Ipsa, doloremque porro earum voluptate saepe magnam
+            iusto accusantium iste?
+          </p>
+          <button
+            class="uppercase mx-20 lg:mx-0 my-0 lg:my-2 py-2 px-6 rounded-full text-xs font-semibold border-2 border-gray-900"
+          >
+            Continue Reading <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+        <div class="lg:mt-0 w-full lg:w-2/4">
+          <div class="proudct-image">
+            <img
+              src="images/section1-header.png"
+              alt="Product-Image"
+              class="w-[600px]"
+            />
           </div>
         </div>
       </div>
-      <div class="slider3 bg-cover bg-center  h-[500px] lg:h-screen"
-        style="background-image: url('images/slider-agency-slider-03.jpg');">
-        <div class="slider3-text container">
-          <div class="pt-28 lg:pt-72 pl-5 lg:pl-60 text-white">
-            <h1 class="text-3xl lg:text-7xl uppercase w-52 lg:w-[38rem] font-bold">The Product Of The future.</h1>
-            <p class="font-semibold lg:mt-5 lg:text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dicta.
-            </p>
-            <p class="font-semibold lg:text-xl">
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-            <div class="flex flex-col w-44 lg:w-auto lg:flex-row gap-2 mt-2">
-              <button class="uppercase my-2 py-2 px-6 rounded-full text-xs font-semibold bg-white text-black">
-                Purchase Now <i class="fa-solid fa-angle-right"></i>
-              </button>
-              <button class="uppercase my-0 lg:my-2 py-2 px-6 rounded-full text-xs font-semibold border-2 border-white">
-                Read More <i class="fa-solid fa-angle-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Hero Section End -->
+    </section>
+    <!-- Product Detail Section End -->
 
-  <!-- Product Detail Section Start -->
-  <section id="product-one">
-  </section>
-  <!-- Product Detail Section End -->
+    <!-- Slider Two Section Start -->
+    <section id="slider-two">
 
-  <script src="plugins/jquery-3.7.0.js"></script>
-  <script src="plugins/aos/aos.js"></script>
-  <script src="plugins/owl-carousel/owl.carousel.js"></script>
-  <script src="script.js"></script>
-</body>
-
+    </section>
+    <!-- Slider Two Section end -->
+    <script src="plugins/jquery-3.7.0.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <script src="plugins/owl-carousel/owl.carousel.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
