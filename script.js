@@ -1,5 +1,5 @@
-AOS.init();
 $(document).ready(function() {
+    AOS.init();
     let anchorSelector = 'a[href^="#"]';
     let anchorList =  document.querySelectorAll(anchorSelector);
     anchorList.forEach(link => {

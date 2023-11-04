@@ -12,20 +12,17 @@
   <link rel="stylesheet" href="plugins/aos/aos.css" />
   <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css" />
   <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <!-- Navbar Start -->
-  <header class="navbar fixed z-50 w-full h-20 lg:h-18" id="home">
+  <header class="navbar fixed z-50 w-full h-20 lg:h-18" data-aos="fade-down" data-duration="1200" id="home">
     <div class="container">
       <nav class="lg:flex lg:flex-row lg:p-6 text-white">
         <div class="flex flex-row justify-end lg:w-1/4">
           <div class="w-4/5">
             <a href="#home">
-              <!-- <img src="Logo/listenluxury-tarnsperent-icon.png" alt="ListenLuxury"
-                class="w-44 h-32 lg:h-32 -mt-6 -ml-2 lg:-ml-20 lg:-mt-10" /> -->
               <h1 class="w-44 h-32 ml-5 mt-3 lg:mt-0 text-3xl">ListenLuxury</h1>
             </a>
           </div>
@@ -35,9 +32,9 @@
             </span>
           </div>
         </div>
-        <div class="items hidden h-56 opacity-75 lg:opacity-100 lg:block lg:w-3/4" id="mobile-menu">
+        <div class="items hidden h-56 opacity-75 lg:opacity-100 lg:block lg:w-3/4 -mt-16 lg:mt-0" id="mobile-menu">
           <ul class="uppercase flex flex-col mb-4 -mt-8 lg:flex-row space-y-3 lg:space-y-0 lg:gap-6 bg-black lg:bg-transparent lg:justify-end lg:mx-20 lg:mt-2">
-            <a href="#product-one">
+            <a href="#aboutus">
               <li class="pb-2 mt-5 mx-5 lg:my-0 border-b-[1px] border-orange-200 lg:border-b-0">
                 About Us
               </li>
@@ -75,10 +72,10 @@
   <!-- Hero Section Start -->
   <section id="main-slider" class="top-0 mb-5 cursor-ew-resize">
     <div id="owl-main" class="owl-carousel">
-      <div class="slider1 bg-cover bg-center h-[500px] lg:h-screen"
+      <div class="slider1 bg-cover bg-center h-screen lg:h-screen"
         style="background-image: url('images/slider-agency-slider-01.jpg')">
         <div class="slider1-text container">
-          <div class="pt-28 lg:pt-72 pl-5 lg:pl-60 text-white">
+          <div class="pt-28 lg:pt-72 pl-5 lg:pl-60 text-white" data-aos="fade-left">
             <h1 class="text-3xl lg:text-7xl uppercase w-52 lg:w-[26rem] font-bold">
               New Level of sound experience.
             </h1>
@@ -100,7 +97,7 @@
           </div>
         </div>
       </div>
-      <div class="slider2 bg-cover bg-center h-[500px] lg:h-screen"
+      <div class="slider2 bg-cover bg-center h-screen lg:h-screen"
         style="background-image: url('images/slider-agency-slider-02.jpg')">
         <div class="slider2-text container">
           <div class="pt-28 lg:pt-72 pl-5 lg:pl-60 text-white">
@@ -125,7 +122,7 @@
           </div>
         </div>
       </div>
-      <div class="slider3 bg-cover bg-center h-[500px] lg:h-screen"
+      <div class="slider3 bg-cover bg-center h-screen lg:h-screen"
         style="background-image: url('images/slider-agency-slider-03.jpg')">
         <div class="slider3-text container">
           <div class="pt-28 lg:pt-72 pl-5 lg:pl-60 text-white">
@@ -155,9 +152,9 @@
   <!-- Hero Section End -->
 
   <!-- Product Detail Section Start -->
-  <section id="product-one">
+  <section id="aboutus">
     <div class="flex flex-col lg:flex-row my-6">
-      <div class="h-2/4 mt-24 lg:mt-40 mb-16 lg:ml-32 text-center lg:text-left w-full lg:w-2/4">
+      <div class="h-2/4 mt-24 lg:mt-40 mb-16 lg:ml-32 text-center lg:text-left w-full lg:w-2/4" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1200">
         <h1 class="text-black text-2xl lg:text-6xl font-semibold">
           The best product on the market, just for you.
         </h1>
@@ -179,7 +176,7 @@
         </a>
       </div>
       <div class="lg:mt-24 w-full lg:w-2/4">
-        <div class="proudct-image">
+        <div class="proudct-image" data-aos="fade-up" data-aos-duration="3000">
           <img src="images/section1-header.png" alt="Product-Image" class="w-[600px]" />
         </div>
       </div>
@@ -188,7 +185,7 @@
   <!-- Product Detail Section End -->
 
   <!-- Slider Two Section Start -->
-  <section id="slider-two" class="mb-5 cursor-ew-resize">
+  <section id="slider-two" class="mb-5 cursor-ew-resize" data-aos="flip-right" data-aos-duration="3000">
     <div id="owl-second" class="owl-carousel">
       <div class="my-5">
         <img src="images/section2-agency-work-01.jpg" alt="" />
@@ -210,11 +207,11 @@
   <section id="product-two">
     <div class="flex flex-col lg:flex-row mt-6">
       <div class="lg:mt-0 w-full lg:w-2/4">
-        <div class="proudct-image lg:ml-24">
+        <div class="proudct-image lg:ml-24" data-aos="fade-down" data-aos-duration="3000">
           <img src="images/section3.png" alt="Product-Image" class="w-[600px]" />
         </div>
       </div>
-      <div class="h-2/4 mt-12 lg:mt-40 mb-2 text-center lg:text-left w-full lg:w-[40%]">
+      <div class="h-2/4 mt-12 lg:mt-40 mb-2 text-center lg:text-left w-full lg:w-[40%]" data-aos="fade-up" data-aos-duration="3000">
         <h1 class="text-black text-2xl lg:text-5xl font-semibold">
           Flexibility and design possibilities at their best.
         </h1>
@@ -242,7 +239,7 @@
   <!-- Product Features Section Start -->
   <section id="features">
     <div class="flex flex-col lg:flex-row h-full">
-      <div class="mt-20 lg:mt-16 pb-5 text-center lg:text-left w-full lg:w-2/4 bg-[#46EEEF]">
+      <div class="mt-20 lg:mt-16 pb-5 text-center lg:text-left w-full lg:w-2/4 bg-[#46EEEF]" data-aos="fade-right" data-aos-duration="3000">
         <div class="feature-1 p-2 flex flex-col lg:w-2/3 lg:flex-row gap-2 lg:gap-4 lg:mt-28 lg:mx-24">
           <div class="number text-3xl font-semibold">01.</div>
           <div class="description">
@@ -279,7 +276,7 @@
           </div>
         </div>
       </div>
-      <div class="lg:mt-16 w-full lg:w-[70%]">
+      <div class="lg:mt-16 w-full lg:w-[70%]" data-aos="fade-left" data-aos-duration="3000">
         <div class="proudct-image">
           <img src="images/section4-header1.jpg" alt="Product-Image" class="w-full" />
         </div>
@@ -292,14 +289,14 @@
   <section id="colors" class="pt-20">
     <div class="container mt-10 mb-6">
       <div class="color-desc text-center">
-        <h1 class="text-4xl font-bold">The new vibrant colors</h1>
-        <p class="mx-3 lg:mx-40 my-4 text-gray-700">The new fall/winter colors are a bit frozen over, with pale and
+        <h1 class="text-4xl font-bold" data-aos="fade-down" data-aos-duration="3000">The new vibrant colors</h1>
+        <p class="mx-3 lg:mx-40 my-4 text-gray-700" data-aos="flip-right" data-aos-duration="3000">The new fall/winter colors are a bit frozen over, with pale and
           bleached-out shades that match up with cooler
           days ahead. Snow Blue, Powder Pink, and Nougat Beige might be nippy to look at, but they’re as friendly to
           wear as your favorite sweater.
         </p>
       </div>
-      <div class="colors lg:w-9/12	lg:ml-52">
+      <div class="colors lg:w-9/12	lg:ml-52" data-aos="flip-left" data-aos-duration="3000">
         <div id="owl-colors" class="owl-carousel cursor-ew-resize">
           <div class="mx-4  my-5"> <img src="images/section4-slider1.png" alt=""> </div>
           <div class="mx-4  my-5"> <img src="images/section4-slider2.png" alt=""> </div>
@@ -313,7 +310,7 @@
 
   <!-- Design Section Start -->
   <section id="design" class="relative pt-16">
-    <div class="my-6">
+    <div class="my-3">
       <img src="images/section5.jpg" class="w-full hidden lg:block" alt="">
       <div class="lg:absolute p-12 lg:p-16 top-[80px] left-[250px] h-[84%] lg:w-[600px] mt-2 bg-[#A78A73] text-white">
         <h1 class="text-2xl lg:text-5xl font-bold">Designed for Sound. Tuned for Emotion.</h1>
@@ -331,13 +328,13 @@
   <!-- Design Section End -->
 
   <!-- Design - 2 Section Start -->
-  <section id="design-2">
+  <section>
     <img src="images/section5.png" alt="" class="lg:ml-40">
   </section>
   <!-- Design-2 Section End -->
 
   <!-- Design-3 Section Start -->
-  <section id="design" class="relative pt-2">
+  <section class="relative pt-2">
     <div class="my-6">
       <img src="images/section5-1.jpg" class="w-full" alt="">
       <div class="lg:absolute p-2 lg:pt-16 lg:px-16 top-[220px] left-[120px] lg:w-[600px] mt-2 text-white">
@@ -346,7 +343,7 @@
     </div>
   </section>
   <!-- Design-4 Section End -->
-  <section id="reviews" class="pt-5 lg:pt-24">
+  <section id="reviews" class="pt-16 lg:pt-24">
     <h1 class="text-center text-3xl my-5">Client's Reviews</h1>
     <div id="owl-review" class="owl-carousel flex-col lg:flex-row gap-1 cursor-ew-resize">
       <div class="mt-4 mx-5 lg:mt-0 max-w-md lg:mx-auto overflow-hidden md:max-w-2xl">
@@ -415,7 +412,7 @@
     </div>
     </div>
   </section>
-  <section id="product" class="pt-5 lg:pt-10">
+  <section id="product" class="pt-8 lg:pt-10">
     <div id="owl-product" class="owl-carousel">
       <div class="my-5">
         <div class="text-center">
@@ -460,7 +457,7 @@
 
     </div>
   </section>
-  <footer class="w-full h-full lg:h-72 bg-gray-200">
+  <footer class="w-full h-full lg:h-76 bg-gray-200">
     <div class="flex flex-col lg:flex-row lg:gap-x-12 place-items-center lg:px-40 lg:py-10">
       <div class="mt-4">
         <!-- <img src="" alt="logo"> -->
@@ -478,17 +475,17 @@
       <div class="mt-8">
         <h2 class="text-black text-xl">Company</h2>
         <ul class="text-center lg:text-left text-gray-500">
-          <li class="my-1">About Us</li>
-          <li class="my-1">Features</li>
-          <li class="my-1">Design</li>
+          <a href="#aboutus"><li class="my-1">About Us</li></a>
+          <a href="#features"><li class="my-1">Features</li></a>
+          <a href="#design"><li class="my-1">Design</li></a>
         </ul>
       </div>
       <div class="mt-8">
         <h2 class="text-black text-xl">Useful Links</h2>
         <ul class="text-center lg:text-left text-gray-600">
           <li class="my-1">Gallery</li>
-          <li class="my-1">Color</li>
-          <li class="my-1">Quick Order</li>
+          <a href="#colors"><li class="my-1">Color</li></a>
+          <a href="#product"><li class="my-1">Quick Order</li></a>
         </ul>
       </div>
       <div class="mt-8">
@@ -507,7 +504,14 @@
             placeholder="* Email Address">
         </div>
       </div>
+      <div class="font-bold text-center lg:text-left border-t-2 border-black pt-5">
+        <div class="text-center text-red-500">Hire Me!</div>
+        <div class="text-blue-700  text-center">Transfoming concepts into captivating websites that leave a lasting impression!</div> <br/>
+        <a href="tel:+91 9157762508"><i class="fa-solid fa-phone"></i> &nbsp; +91 91577 62508</a><br>
+        <a href="mailto:info.divyeshpanchal@gmail.com" class="lg:text-sm"><i class="fa-solid fa-envelope"></i>&nbsp; info.divyeshpanchal@gmail.com</a>
+      </div>  
     </div>
+    <div class="text-center font-bold text-sm py-5"><i class="fa-solid fa-copyright"></i> 2023 Divyesh Panchal, Inc All rights reserved.</div>
   </footer>
   <script src="plugins/jquery-3.7.0.js"></script>
   <script src="plugins/aos/aos.js"></script>
