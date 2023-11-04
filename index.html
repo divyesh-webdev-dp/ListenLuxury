@@ -17,7 +17,7 @@
 
 <body>
   <!-- Navbar Start -->
-  <header class="navbar fixed z-50 w-full h-20 lg:h-18" data-aos="fade-down" data-duration="1200" id="home">
+  <header class="navbar fixed z-50 w-full h-20 lg:h-18" id="home" data-aos="fade-down" data-duration="1200" data-aos-delay="300">
     <div class="container">
       <nav class="lg:flex lg:flex-row lg:p-6 text-white">
         <div class="flex flex-row justify-end lg:w-1/4">
@@ -32,8 +32,9 @@
             </span>
           </div>
         </div>
-        <div class="items hidden h-56 opacity-75 lg:opacity-100 lg:block lg:w-3/4 -mt-16 lg:mt-0" id="mobile-menu">
-          <ul class="uppercase flex flex-col mb-4 -mt-8 lg:flex-row space-y-3 lg:space-y-0 lg:gap-6 bg-black lg:bg-transparent lg:justify-end lg:mx-20 lg:mt-2">
+        <div class="items hidden h-56 opacity-75 lg:opacity-100 lg:block lg:w-3/4" id="mobile-menu">
+          <ul
+            class="uppercase flex flex-col mb-4 -mt-20 lg:flex-row space-y-3 lg:space-y-0 lg:gap-6 bg-black lg:bg-transparent lg:justify-end lg:mx-20 lg:mt-2">
             <a href="#aboutus">
               <li class="pb-2 mt-5 mx-5 lg:my-0 border-b-[1px] border-orange-200 lg:border-b-0">
                 About Us
@@ -75,7 +76,7 @@
       <div class="slider1 bg-cover bg-center h-screen lg:h-screen"
         style="background-image: url('images/slider-agency-slider-01.jpg')">
         <div class="slider1-text container">
-          <div class="pt-28 lg:pt-72 pl-5 lg:pl-60 text-white" data-aos="fade-left">
+          <div class="pt-28 lg:pt-72 pl-5 lg:pl-60 text-white">
             <h1 class="text-3xl lg:text-7xl uppercase w-52 lg:w-[26rem] font-bold">
               New Level of sound experience.
             </h1>
@@ -154,7 +155,7 @@
   <!-- Product Detail Section Start -->
   <section id="aboutus">
     <div class="flex flex-col lg:flex-row my-6">
-      <div class="h-2/4 mt-24 lg:mt-40 mb-16 lg:ml-32 text-center lg:text-left w-full lg:w-2/4" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1200">
+      <div class="h-2/4 mt-24 lg:mt-40 mb-16 lg:ml-32 text-center lg:text-left w-full lg:w-2/4" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1000">
         <h1 class="text-black text-2xl lg:text-6xl font-semibold">
           The best product on the market, just for you.
         </h1>
@@ -176,7 +177,7 @@
         </a>
       </div>
       <div class="lg:mt-24 w-full lg:w-2/4">
-        <div class="proudct-image" data-aos="fade-up" data-aos-duration="3000">
+        <div class="proudct-image">
           <img src="images/section1-header.png" alt="Product-Image" class="w-[600px]" />
         </div>
       </div>
@@ -276,7 +277,7 @@
           </div>
         </div>
       </div>
-      <div class="lg:mt-16 w-full lg:w-[70%]" data-aos="fade-left" data-aos-duration="3000">
+      <div class="lg:mt-16 w-full lg:w-[70%]" data-aos="fade-up" data-aos-duration="3000">
         <div class="proudct-image">
           <img src="images/section4-header1.jpg" alt="Product-Image" class="w-full" />
         </div>
@@ -288,16 +289,16 @@
   <!-- Colors Section Start -->
   <section id="colors" class="pt-20">
     <div class="container mt-10 mb-6">
-      <div class="color-desc text-center">
-        <h1 class="text-4xl font-bold" data-aos="fade-down" data-aos-duration="3000">The new vibrant colors</h1>
-        <p class="mx-3 lg:mx-40 my-4 text-gray-700" data-aos="flip-right" data-aos-duration="3000">The new fall/winter colors are a bit frozen over, with pale and
+      <div class="color-desc text-center" data-aos="fade-down" data-aos-duration="3000">
+        <h1 class="text-4xl font-bold">The new vibrant colors</h1>
+        <p class="mx-3 lg:mx-40 my-4 text-gray-700">The new fall/winter colors are a bit frozen over, with pale and
           bleached-out shades that match up with cooler
           days ahead. Snow Blue, Powder Pink, and Nougat Beige might be nippy to look at, but they’re as friendly to
           wear as your favorite sweater.
         </p>
       </div>
-      <div class="colors lg:w-9/12	lg:ml-52" data-aos="flip-left" data-aos-duration="3000">
-        <div id="owl-colors" class="owl-carousel cursor-ew-resize">
+      <div class="colors lg:w-9/12	lg:ml-52">
+        <div id="owl-colors" class="owl-carousel cursor-ew-resize" >
           <div class="mx-4  my-5"> <img src="images/section4-slider1.png" alt=""> </div>
           <div class="mx-4  my-5"> <img src="images/section4-slider2.png" alt=""> </div>
           <div class="mx-4  my-5"> <img src="images/section4-slider3.png" alt=""> </div>
@@ -328,13 +329,13 @@
   <!-- Design Section End -->
 
   <!-- Design - 2 Section Start -->
-  <section>
+  <section id="design-2">
     <img src="images/section5.png" alt="" class="lg:ml-40">
   </section>
   <!-- Design-2 Section End -->
 
   <!-- Design-3 Section Start -->
-  <section class="relative pt-2">
+  <section id="design" class="relative pt-2">
     <div class="my-6">
       <img src="images/section5-1.jpg" class="w-full" alt="">
       <div class="lg:absolute p-2 lg:pt-16 lg:px-16 top-[220px] left-[120px] lg:w-[600px] mt-2 text-white">
